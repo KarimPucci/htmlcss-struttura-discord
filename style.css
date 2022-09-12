@@ -9,9 +9,26 @@
   border: 1px solid black;
 }
 
+.container{
+  margin: auto;
+  width: 900px;
+}
+
+.container{
+  display: flex;
+}
+
 header{
   background-color: rgb(5, 72, 188);
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo, .menù, .bottone-nav{
+  border: 2px solid black;
+  background-color: greenyellow;
 }
 
 .jumbotron{
@@ -28,3 +45,4 @@ footer{
   background-color: rgb(8, 237, 96);
   height: 200px;
 }
+
