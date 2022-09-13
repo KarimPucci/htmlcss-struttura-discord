@@ -4,45 +4,75 @@
   box-sizing: border-box;
 }
 
-.debug{
-  background-color: yellow;
-  border: 1px solid black;
-}
-
 .container{
-  margin: auto;
-  width: 900px;
-}
-
-.container{
-  display: flex;
+  width: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header{
-  background-color: rgb(5, 72, 188);
-  height: 50px;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(0, 72, 255);
 }
 
-.logo, .menù, .bottone-nav{
-  border: 2px solid black;
-  background-color: greenyellow;
+
+header .container{
+  justify-content: space-between;
+  display: flex;
 }
 
 .jumbotron{
-  background-color: rgb(13, 142, 202);
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
 }
 
-main{
-  background-color: rgb(0, 255, 234);
-  height: 500px;
+.jumbotron .content{
+  max-width: 800px;
 }
 
+/*MAIN*/
+section .bg-grey{
+  background-color: #F6F6F6;
+}
+
+section .container{
+  display: flex;
+  min-height: 500;
+  background-color: aquamarine;
+}
+
+section .container .image{
+  width: 60%;
+}
+
+section .container .text{
+  width: 40%;
+}
+
+section.section-bottom .container{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*FOOTER*/
 footer{
-  background-color: rgb(8, 237, 96);
-  height: 200px;
+  background-color: #24272a;
 }
 
+.footer-to .col-social{
+  width: calc(100% / 3);
+}
+
+.footer-top .col-menu{
+  width: calc(100% / 6);
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
